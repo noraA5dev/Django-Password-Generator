@@ -12,3 +12,9 @@ class Index(View):
         return render(request, 'passgen/index.html', context)
     def post(self, request):
         pass
+
+class test(View):
+    def get(self, request):
+        return render(request, 'passgen/test.html')
+    def post(self, request):
+        pass

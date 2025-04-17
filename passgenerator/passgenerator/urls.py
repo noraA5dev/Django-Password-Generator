@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from passgen.views import Index
+from passgen.views import test
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Index.as_view(), name='index'),
+    path('test/', test.as_view(), name='test'),
 ]
